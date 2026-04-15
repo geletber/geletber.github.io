@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои проекты</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --accent: #38bdf8;
+            --tg-bot: #22d3ee;
+            --tg-chan: #818cf8;
+        }
 
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 350px;
+        }
+
+        h1 { font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600; }
+
+        .btn {
+            display: block;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: transform 0.2s, filter 0.2s;
+        }
+
+        .btn:active { transform: scale(0.97); }
+
+        /* МЕСТА ДЛЯ ТВОИХ ССЫЛОК */
+        .bot { background: var(--tg-bot); box-shadow: 0 4px 14px rgba(34, 211, 238, 0.4); }
+        .channel { background: var(--tg-chan); box-shadow: 0 4px 14px rgba(129, 140, 248, 0.4); }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Связь со мной</h1>
+        
+        <!-- МЕНЯЙ ССЫЛКИ ТУТ -->
+        <a href="https://t.me/dfghjkoiuytrewbot" class="btn bot" target="_blank">🤖 Запустить Бота</a>
+        <a href="https://t.me" class="btn channel" target="_blank">📢 Подписаться на Канал</a>
+        
+    </div>
+
+</body>
+</html>
